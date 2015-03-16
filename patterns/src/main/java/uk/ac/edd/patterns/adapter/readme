@@ -1,0 +1,4 @@
+Given a client that usually works with interface A, and the existence of a
+new interface B, which is now preferable to A:
+   ** use an adapter interface conforming to A, yet wrapping B. The idea is to
+   ** use B's preferable behaviour to fulfil A's legacy interface.
