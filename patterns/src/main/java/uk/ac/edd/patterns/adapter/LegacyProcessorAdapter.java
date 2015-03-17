@@ -1,6 +1,6 @@
 package uk.ac.edd.patterns.adapter;
 
-import uk.ac.edd.patterns.response.ProcessOutcome;
+import uk.ac.edd.response.ProcessOutcome;
 
 import java.io.File;
 import java.util.ArrayList;

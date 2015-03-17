@@ -2,7 +2,7 @@ package uk.ac.edd.patterns.adapter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import uk.ac.edd.patterns.response.ProcessOutcome;
+import uk.ac.edd.response.ProcessOutcome;
 
 import java.io.File;
 

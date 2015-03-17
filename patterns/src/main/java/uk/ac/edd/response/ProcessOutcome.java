@@ -1,4 +1,4 @@
-package uk.ac.edd.patterns.response;
+package uk.ac.edd.response;
 
 import java.util.ArrayList;
 import java.util.List;

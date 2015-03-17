@@ -2,7 +2,7 @@ package uk.ac.edd.patterns.adapter;
 
 import org.junit.Test;
 import org.mockito.InOrder;
-import uk.ac.edd.patterns.response.ProcessOutcome;
+import uk.ac.edd.response.ProcessOutcome;
 
 import java.io.File;
 
