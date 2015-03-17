@@ -1,0 +1,22 @@
+In the abstract factory pattern, we enable the creation of a family of
+related objects, linked through inheritance, by a client, without
+exposing to them the implementation details.
+
+The idea is to mirror the object family with a corresponding set of concrete
+factories each of which has the same common abstract factory.
+
+A general purpose factory, which accepts as parameter an instance of the
+abstract factory (but in practice accepts a concrete factory) is used then
+to create different objects.
+
+This pattern has the benefits of:
+* not exposing implementation details of the items being created
+* not exposing the logic on how to create the items
+* by decoupling parts of the system, it promotes testing
+* general factory can be instantiated with dependency injection
+
+Disadvantages:
+* if an implementation of the concrete factory chooses to use a switch
+statement to determine what factory to use, then that goes against good
+software design since it is inflexible and may not satisfy needs as a
+system grows (unless code is updated).
