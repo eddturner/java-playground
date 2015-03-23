@@ -23,10 +23,10 @@ public class LegacyProcessorAdapterTest {
     public void testNewProcessorUsage() {
         File file = new File("test");
         FileNewProcessor mockNewProcessor = mock(FileNewProcessor.class);
-        ProcessOutcome mockedProcessOutcome = ProcessOutcome.newBuilder().withName("testing").build();
-        when(mockNewProcessor.preProcess(any(File.class))).thenReturn(mockedProcessOutcome);
-        when(mockNewProcessor.process(any(File.class))).thenReturn(mockedProcessOutcome);
-        when(mockNewProcessor.postProcess(any(File.class))).thenReturn(mockedProcessOutcome);
+        ProcessOutcome realProcessOutcome = ProcessOutcome.newBuilder().withName("testing").build();
+        when(mockNewProcessor.preProcess(any(File.class))).thenReturn(realProcessOutcome);
+        when(mockNewProcessor.process(any(File.class))).thenReturn(realProcessOutcome);
+        when(mockNewProcessor.postProcess(any(File.class))).thenReturn(realProcessOutcome);
 
         LegacyProcessor<File, ProcessOutcome> processor = new LegacyProcessorAdapter(mockNewProcessor);
 
