@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
  *
  * @author Edd <eddturner@ebi.ac.uk>
  */
-public class BasicEngineController implements EngineController{
+public class BasicEngineController implements EngineController {
     // logger
     private static final Logger logger = LoggerFactory.getLogger(BasicEngineController.class);
     boolean sparkPlugsOk = true;
@@ -16,6 +16,6 @@ public class BasicEngineController implements EngineController{
     @Override
     public boolean selfCheck() {
         logger.info("checking spark plugs: {}", sparkPlugsOk);
-        return true;
+        return sparkPlugsOk;
     }
 }

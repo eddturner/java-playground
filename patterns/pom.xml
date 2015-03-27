@@ -30,12 +30,12 @@
             <version>1.1.2</version>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>org.jmockit</groupId>-->
-            <!--<artifactId>jmockit</artifactId>-->
-            <!--<version>1.15</version>-->
-            <!--<scope>test</scope>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.jmockit</groupId>
+            <artifactId>jmockit</artifactId>
+            <version>1.15</version>
+            <scope>test</scope>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
